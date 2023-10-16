@@ -1,0 +1,35 @@
+﻿<Window x:Class="_221103_Übung10_Grid_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_221103_Übung10_Grid_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="152.248" Width="339.398">
+    <Grid Margin="0,0,0,0.5" HorizontalAlignment="Left" Width="334">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="txtHeight" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Height" VerticalAlignment="Top" Width="121"/>
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="txtWidth" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Width" VerticalAlignment="Top" Width="121"/>
+        <TextBox Grid.Row="4" Grid.Column="1" x:Name="txtLenght" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Lenght" VerticalAlignment="Top" Width="121"/>
+        <Button Grid.Row="3" Grid.Column="2" x:Name="btnCalculate" Content="Calculate" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Calculate_Click"/>
+        <Label Grid.Row="3" Grid.Column="3" x:Name="lblVolume" Content="Volume" HorizontalAlignment="Left" VerticalAlignment="Top" Width="59"/>
+        <Label Grid.Row="3" Grid.Column="4" x:Name="lblSurface" Content="Surface" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.149,0.151"/>
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Content="volume and surface calculation of a square" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

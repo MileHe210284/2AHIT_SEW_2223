@@ -1,0 +1,33 @@
+﻿<Window x:Class="_230202_Übung21.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_230202_Übung21"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Lenght" HorizontalAlignment="Left" Height="26" Margin="46,65,0,0" VerticalAlignment="Top" Width="95"/>
+        <Label Content="With" HorizontalAlignment="Left" Height="28" Margin="46,95,0,0" VerticalAlignment="Top" Width="95"/>
+        <TextBox x:Name="txtA" HorizontalAlignment="Left" Height="25" Margin="146,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" />
+        <TextBox x:Name="txtB" HorizontalAlignment="Left" Height="26" Margin="146,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
+        <Label Content="Area:" HorizontalAlignment="Left" Height="28" Margin="10,209,0,0" VerticalAlignment="Top" Width="78"/>
+        <Label Content="Circumference" HorizontalAlignment="Left" Height="29" Margin="10,237,0,0" VerticalAlignment="Top" Width="89"/>
+        <Label x:Name="lblArea" Content="" HorizontalAlignment="Left" Height="32" Margin="146,205,0,0" VerticalAlignment="Top" Width="86"/>
+        <Label x:Name="lblCirc" Content="" HorizontalAlignment="Left" Height="29" Margin="146,237,0,0" VerticalAlignment="Top" Width="86"/>
+        <Button Content="calculate" HorizontalAlignment="Left" Height="21" Margin="279,190,0,0" VerticalAlignment="Top" Width="66" Click="Calculate_Click"/>
+        <ComboBox x:Name="cboDes" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="225,10,0,0" SelectionChanged="cboDes_SelectionChanged">
+            <ComboBoxItem Content="Kreis" x:Uid="1"/>
+            <ComboBoxItem Content="Rechteck" x:Uid="2"/>
+        </ComboBox>
+        <TextBox x:Name="txtRad" HorizontalAlignment="Left" Height="25" Margin="423,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78"/>
+        <Label Content="Radius" HorizontalAlignment="Left" Height="25" Margin="334,65,0,0" VerticalAlignment="Top" Width="68"/>
+        <TextBox x:Name="txtYm" HorizontalAlignment="Left" Height="18" Margin="232,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="71"/>
+        <TextBox x:Name="txtXm" HorizontalAlignment="Left" Height="18" Margin="345,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73"/>
+        <Label Content="xM:" HorizontalAlignment="Left" Margin="232,130,0,0" VerticalAlignment="Top"/>
+        <Label Content="Mass" HorizontalAlignment="Left" Height="25" Margin="10,271,0,0" VerticalAlignment="Top" Width="89"/>
+        <Label x:Name="lblMass" Content="" HorizontalAlignment="Left" Margin="134,271,0,0" VerticalAlignment="Top"/>
+        <Label Content="Density" HorizontalAlignment="Left" Margin="540,65,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDensity" HorizontalAlignment="Left" Height="23" Margin="628,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>

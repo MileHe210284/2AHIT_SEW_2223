@@ -1,0 +1,34 @@
+﻿<Window x:Class="_230530_Übung_26b.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_230530_Übung_26b"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="608.13" Width="308.394">
+    <Grid>
+        <Label Content="Fahrzeugauswahl" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <RadioButton x:Name="rdoKFZ" GroupName="Fahrzeug" Content="KFZ" HorizontalAlignment="Left" Margin="32,41,0,0" VerticalAlignment="Top" Checked="KFZ_Checked"/>
+        <RadioButton x:Name="rdoFahrrad" Content="Fahrrad" HorizontalAlignment="Left" Margin="32,61,0,0" VerticalAlignment="Top" GroupName="Fahrzeug" Checked="Fahrrad_Checked"/>
+        <RadioButton x:Name="rdoFlugzeug" Content="Flugzeug" HorizontalAlignment="Left" Margin="32,81,0,0" VerticalAlignment="Top" GroupName="Fahrzeug" Checked="Flugzeug_Checked"/>
+        <RadioButton x:Name="rdoBoot" Content="Boot" HorizontalAlignment="Left" Margin="32,101,0,0" VerticalAlignment="Top" GroupName="Fahrzeug" Checked="Boot_Checked"/>
+        <Button x:Name="btnInfos" Content="Infos" HorizontalAlignment="Left" Margin="196,138,0,0" VerticalAlignment="Top" Width="75" Click="Infos_Click"/>
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="196,350,0,0" VerticalAlignment="Top" Width="76" Click="Start_Click"/>
+        <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="197,321,0,0" VerticalAlignment="Top" Width="75" Click="Stop_Click"/>
+        <Label Content="Engine Status" HorizontalAlignment="Left" Margin="10,277,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <RadioButton x:Name="rdoRunning" Content="Running" HorizontalAlignment="Left" Margin="32,326,0,0" VerticalAlignment="Top" GroupName="Status" IsEnabled="False"/>
+        <RadioButton x:Name="rdoStopped" Content="Stopped" HorizontalAlignment="Left" Margin="32,355,0,0" VerticalAlignment="Top" GroupName="Status" IsEnabled="False"/>
+        <TextBox x:Name="txtNewSpeed" HorizontalAlignment="Left" Height="23" Margin="104,445,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58"/>
+        <Label Content="Change Speed" HorizontalAlignment="Left" Margin="10,397,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Add/Subtract:" HorizontalAlignment="Left" Margin="16,442,0,0" VerticalAlignment="Top"/>
+        <Label Content="km/h" HorizontalAlignment="Left" Margin="167,442,0,0" VerticalAlignment="Top"/>
+        <Label Content="Current Speed" HorizontalAlignment="Left" Margin="14,475,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSpeed" Content="" HorizontalAlignment="Left" Margin="104,475,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblInfo" Content="" HorizontalAlignment="Left" Height="114" Margin="16,163,0,0" VerticalAlignment="Top" Width="257"/>
+        <Label Content="km/h" HorizontalAlignment="Left" Margin="167,475,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnChangeSpeed" Content="Change" HorizontalAlignment="Left" Margin="210,445,0,0" VerticalAlignment="Top" Width="76" Click="ChangeSpeed_Click"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="32,542,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
+        <Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Left" Margin="196,542,0,0" VerticalAlignment="Top" Width="75" Click="Reset_Click"/>
+
+    </Grid>
+</Window>

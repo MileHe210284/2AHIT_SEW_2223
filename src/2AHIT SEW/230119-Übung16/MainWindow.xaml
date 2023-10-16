@@ -1,0 +1,21 @@
+﻿<Window x:Class="_230119_Übung16.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_230119_Übung16"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="A" HorizontalAlignment="Left" Height="26" Margin="22,21,0,0" VerticalAlignment="Top" Width="95"/>
+        <Label Content="B" HorizontalAlignment="Left" Height="28" Margin="22,64,0,0" VerticalAlignment="Top" Width="95"/>
+        <TextBox x:Name="txtA" HorizontalAlignment="Left" Height="25" Margin="146,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
+        <TextBox x:Name="txtB" HorizontalAlignment="Left" Height="26" Margin="146,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
+        <Label Content="Area:" HorizontalAlignment="Left" Height="28" Margin="10,133,0,0" VerticalAlignment="Top" Width="78"/>
+        <Label Content="Circumference" HorizontalAlignment="Left" Height="29" Margin="10,166,0,0" VerticalAlignment="Top" Width="89"/>
+        <Label x:Name="lblArea" Content="" HorizontalAlignment="Left" Height="32" Margin="146,133,0,0" VerticalAlignment="Top" Width="86"/>
+        <Label x:Name="lblCirc" Content="" HorizontalAlignment="Left" Height="29" Margin="146,166,0,0" VerticalAlignment="Top" Width="86"/>
+        <Button Content="calculate" HorizontalAlignment="Left" Height="21" Margin="22,107,0,0" VerticalAlignment="Top" Width="66" Click="Calculate_Click"/>
+
+    </Grid>
+</Window>
